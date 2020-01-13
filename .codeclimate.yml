@@ -1,20 +1,23 @@
 version: 2
 plugins:
+  structure:
+    enabled: false
   duplication:
-    enabled: true
+    enabled: false
     config:
       languages:
         ruby:
           mass_threshold: 18
   flog:
-      enabled: true
+      enabled: false
   git-legal:
-    enabled: true
+    enabled: false
   markdownlint:
-    enabled: true
+    enabled: false
   reek:
-    enabled: true
+    enabled: false
   rubocop:
     enabled: true
+    channel: rubocop-0-76
 exclude_patterns:
   - "spec/"
